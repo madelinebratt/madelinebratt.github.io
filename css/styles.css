@@ -1966,22 +1966,18 @@ body, html { height: 100%; }
   color: var(--color-gold);
 }
 
-/* ── Profile photo (Clean Reset) ───────────────────────────── */
+/* ── Profile Photo ───────────────────────────── */
+
 .profile {
-  position: relative;
   width: 100%;
-  max-width: 35rem; /* Controls how large the image can get */
-  margin: 0 auto; /* Centers the image */
-  background: none !important;
-  filter: none; /* Removes the drop shadow */
+  max-width: 35rem;
+  margin: 0 auto;
 }
 
 .profile .profile-img {
+  display: block;
   width: 100%;
   height: auto;
-  position: relative; /* Places the image naturally on the page without forced anchoring */
-  z-index: 2; /* Keeps your photo on top of the dots */
-  display: block;
 }
 
 /* Network Dots */
