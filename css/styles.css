@@ -44,10 +44,8 @@
   --bs-gray-900: #1a1714;
 
   /* ── BRAND PALETTE ──────────────────────────────────────── */
-  /* Primary: Deep slate navy — trustworthy, senior, authoritative */
-  --bs-primary: #1b2d4f;
-  /* Secondary: Burnished gold — distinctive without being garish */
-  --bs-secondary: #b07d3a;
+   --bs-primary: #14213d; /* Deep Oxford Navy */
+  --bs-secondary: #c5a059;
   --bs-success: #166534;
   --bs-info: #0369a1;
   --bs-warning: #92400e;
