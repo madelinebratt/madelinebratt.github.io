@@ -2090,3 +2090,25 @@ a.icon-link:hover {
   background-color: var(--color-gold-pale);
   color: var(--color-navy);
 }
+
+/* ── Minimalist Skill Pills ──────────────────────────────────── */
+.skill-pill {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  margin: 0.25rem 0.15rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--color-navy);
+  background-color: transparent;
+  border: 1px solid rgba(20, 33, 61, 0.15); 
+  border-radius: 50rem; 
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  background-color: var(--color-navy);
+  color: #fff;
+  border-color: var(--color-navy);
+  transform: translateY(-2px);
+}
