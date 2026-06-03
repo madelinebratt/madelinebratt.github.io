@@ -1971,52 +1971,58 @@ body, html { height: 100%; }
   position: relative;
   height: 75vw;
   width: 75vw;
+  border-radius: 5vw;
+  /* Creates a perfect circle with a super faint gold background */
+  border-radius: 50%;
+  background-color: rgba(197, 160, 89, 0.1) !important; 
   margin-top: 5vw;
   max-height: 40rem;
   max-width: 40rem;
-  background-color: transparent !important; /* Removes the gold circle */
-  border-radius: 0;
-  /* Adds a soft, glowing shadow behind the cutout */
-  filter: drop-shadow(0 20px 40px rgba(197, 160, 89, 0.2)); 
+  background-color: var(--color-navy);
+  box-shadow:
+    0 0 0 6px rgba(176, 125, 58, 0.25),
+    0 20px 60px rgba(15, 30, 54, 0.35);
 }
-
 .profile .profile-img {
-  width: 100%; 
-  height: auto !important; /* This is the magic line that prevents all squishing */
+  height: 80vw;
+  height: auto; /* Lets the image scale naturally */
+  width: 90%; /* Keeps the image inside the circle */
   max-height: 45rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .profile .dots-1 { position: absolute; width: 3vw; right: 1.5vw; top: 4vw; }
-.profile .dots-1 svg { fill: rgba(20, 33, 61, 0.1); } /* Soft navy */
+.profile .dots-1 svg { fill: rgba(249, 248, 246, 0.5); }
 .profile .dots-2 { position: absolute; width: 3vw; right: -4vw; top: 6.05vw; }
 .profile .dots-2 svg { fill: var(--color-gold); }
 .profile .dots-3 { position: absolute; width: 3vw; left: 1.5vw; bottom: 6.05vw; }
-.profile .dots-3 svg { fill: rgba(20, 33, 61, 0.1); } /* Soft navy */
+.profile .dots-3 svg { fill: rgba(249, 248, 246, 0.5); }
 .profile .dots-4 { position: absolute; width: 3vw; left: -4vw; bottom: 4vw; }
 .profile .dots-4 svg { fill: var(--color-gold); }
 
-/* ── Responsive Sizing (Cleaned to prevent image warping) ────── */
 @media (min-width: 576px) {
   .profile { height: 60vw; width: 60vw; }
+  .profile .profile-img { height: 65vw; }
   .profile .dots-1, .profile .dots-2, .profile .dots-3, .profile .dots-4 { width: 3vw; }
   .profile .dots-2 { right: -4vw; }
   .profile .dots-4 { left: -4vw; }
 }
 @media (min-width: 768px) {
   .profile { height: 50vw; width: 50vw; }
+  .profile .profile-img { height: 55vw; }
 }
 @media (min-width: 992px) {
   .profile { height: 40vw; width: 40vw; }
+  .profile .profile-img { height: 45vw; }
   .profile .dots-1, .profile .dots-2, .profile .dots-3, .profile .dots-4 { width: 1.5vw; }
   .profile .dots-2 { right: -2vw; }
   .profile .dots-4 { left: -2vw; }
 }
 @media (min-width: 1200px) {
   .profile { height: 35vw; width: 35vw; }
+  .profile .profile-img { height: 40vw; }
   .profile .dots-1, .profile .dots-2, .profile .dots-3, .profile .dots-4 { width: 1.5vw; }
 }
 
