@@ -11,72 +11,77 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #1e30f3;
+--bs-blue: #3a5a81;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #e21e80;
+  --bs-pink: #d98cb3;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-green: #4b7f52;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
+  --bs-black: #121212;
+  --bs-white: #ffffff;
+  
+  /* Grayscale smoothing */
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
+  --bs-gray-200: #f1f3f5;
+  --bs-gray-300: #e9ecef;
   --bs-gray-400: #ced4da;
   --bs-gray-500: #adb5bd;
   --bs-gray-600: #6c757d;
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1f3a5f;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
+
+  /* Sleek Primary/Secondary Assignment */
+  --bs-primary: #2b3a42; /* Deep Slate */
+  --bs-secondary: #8d99ae; /* Soft Taupe/Steel */
+  --bs-success: #4b7f52;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 31, 58, 95;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
+
+  /* RGB equivalents for alpha transparency */
+  --bs-primary-rgb: 43, 58, 66;
+  --bs-secondary-rgb: 141, 153, 174;
+  --bs-success-rgb: 75, 127, 82;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
+  --bs-black-rgb: 18, 18, 18;
+  
+  /* Body and Font settings */
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Plus Jakarta Sans";
+  --bs-body-bg-rgb: 250, 250, 250; /* Slightly softer than stark white */
+  --bs-font-sans-serif: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-line-height: 1.6;
+  --bs-body-color: #333333;
+  --bs-body-bg: #fafafa;
+  
+  /* Borders and Links */
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-color: #e2e4e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.1);
   --bs-border-radius: 0.375rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.5rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1f3a5f;
-  --bs-link-hover-color: #14263d;
-  --bs-code-color: #e21e80;
-  --bs-highlight-bg: #fff3cd;
+  --bs-link-color: #2b3a42;
+  --bs-link-hover-color: #5c6b73;
+  --bs-code-color: #b56576;
+  --bs-highlight-bg: #fef0c7;
 }
 
 *,
@@ -2998,19 +3003,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #e21e80;
-  --bs-btn-border-color: #e21e80;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #e21e80;
-  --bs-btn-hover-border-color: #e21e80;
-  --bs-btn-focus-shadow-rgb: 226, 30, 128;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #e21e80;
-  --bs-btn-active-border-color: #e21e80;
+  --bs-btn-color: #8d99ae;
+  --bs-btn-border-color: #8d99ae;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8d99ae;
+  --bs-btn-hover-border-color: #8d99ae;
+  --bs-btn-focus-shadow-rgb: 141, 153, 174;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8d99ae;
+  --bs-btn-active-border-color: #8d99ae;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #e21e80;
+  --bs-btn-disabled-color: #8d99ae;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #e21e80;
+  --bs-btn-disabled-border-color: #8d99ae;
   --bs-gradient: none;
 }
 
@@ -11556,12 +11561,12 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: #1e30f3;
-  background: linear-gradient(135deg, #1f3a5f, #6c757d);
+  background: #2b3a42;
+  background: linear-gradient(135deg, #2b3a42, #8d99ae);
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #1f3a5f, #495057);
+  background: linear-gradient(90deg, #2b3a42, #8d99ae);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
